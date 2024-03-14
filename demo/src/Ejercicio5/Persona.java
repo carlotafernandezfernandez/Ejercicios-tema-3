@@ -19,7 +19,7 @@ public class Persona {
         this.nombre = n;
         this.edad = e;
         this.DNI = generaDNI();
-        this.sexo = Genero.s; //como se haria?
+        this.sexo = s; 
         this.peso = 0;
         this.altura = 0;
     }
@@ -28,7 +28,7 @@ public class Persona {
         this.nombre = n;
         this.edad = e;
         this.DNI = generaDNI();
-        this.sexo = Genero.s; //como se haria?
+        this.sexo = s; 
         this.peso = p;
         this.altura = a;
     }
