@@ -1,8 +1,8 @@
 public class Output {
-    public imprimirIMC(){;
-        if (persona.valorarPesoCorporal(persona.calcularIMC(getPeso(),getAltura())==1)){
+    public void imprimirIMC(){;
+        if (this.valorarPesoCorporal(this.calcularIMC(this.getPeso(), this.getAltura())==1)){
             System.out.println("Tiene sobrepeso");  
-        }if (valorarPesoCorporal(calcularIMC(getPeso(),getAltura())==-1)){
+        }if (this.valorarPesoCorporal(this.calcularIMC(this.getPeso(), this.getAltura())==-1)){
             System.out.println("Su peso esta por debajo de lo normal");
         }else{
             System.out.println("Su peso es normal");
@@ -11,7 +11,7 @@ public class Output {
     }
 
     public void Adulto (){
-        if(esMayorDeEdad(persona.getEdad())){
+        if(esMayorDeEdad(this.getEdad())){
             System.out.println("Es mayor de edad");
         }else{
             System.out.println("Es menor de edad");

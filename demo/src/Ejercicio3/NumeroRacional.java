@@ -38,10 +38,10 @@ public class NumeroRacional {
     }
 
     public NumeroRacional Sumar (NumeroRacional n2){
-        int multiplicacion = a.getDenominador()*a.getDenominador();
-        int suma= (multiplicacion/a.getDenominador()*a.getNumerador())+(multiplicacion/n2.getDenominador()*n2.getNumerador());
+        int multiplicacion = this.getDenominador()*this.getDenominador();
+        int suma= (multiplicacion/this.getDenominador()*this.getNumerador())+(multiplicacion/n2.getDenominador()*n2.getNumerador());
         NumeroRacional resultado = new NumeroRacional(suma, multiplicacion);
-        System.out.println("La suma de "+a+" + "+n2+" es "+resultado);
+        System.out.println("La suma de "+this+" + "+n2+" es "+resultado);
         return resultado;  
     }
 
@@ -56,7 +56,7 @@ public class NumeroRacional {
     public NumeroRacional multiplicacion (NumeroRacional n1, NumeroRacional n2){
         int multiplicacionNumerador = n1.getDenominador()*n2.getDenominador();
         int multiplicacionDenominador= n1.getNumerador()*n2.getNumerador();
-        NumeroRacional resultado = new NumeroRacional(multiplicacionNumerador, multiplicacionDenomiandor);
+        NumeroRacional resultado = new NumeroRacional(multiplicacionNumerador, multiplicacionDenominador);
         System.out.println("La multiplicacion de "+n1+" * "+n2+" es "+resultado);
         return resultado;  
     }
