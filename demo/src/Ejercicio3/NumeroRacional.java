@@ -37,11 +37,11 @@ public class NumeroRacional {
         return "NumeroRacional= "+numerador +" / "+ denominador;
     }
 
-    public NumeroRacional Sumar (NumeroRacional n1, NumeroRacional n2){
-        int multiplicacion = n1.getDenominador()*n2.getDenominador();
-        int suma= (multiplicacion/n1.getDenominador()*n1.getNumerador())+(multiplicacion/n2.getDenominador()*n2.getNumerador());
+    public NumeroRacional Sumar (NumeroRacional n2){
+        int multiplicacion = a.getDenominador()*a.getDenominador();
+        int suma= (multiplicacion/a.getDenominador()*a.getNumerador())+(multiplicacion/n2.getDenominador()*n2.getNumerador());
         NumeroRacional resultado = new NumeroRacional(suma, multiplicacion);
-        System.out.println("La suma de "+n1+" + "+n2+" es "+resultado);
+        System.out.println("La suma de "+a+" + "+n2+" es "+resultado);
         return resultado;  
     }
 

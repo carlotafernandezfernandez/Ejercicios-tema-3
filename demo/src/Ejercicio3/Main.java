@@ -22,7 +22,7 @@ public class Main {
         do {
             switch (opcion){
                 case 1: {
-                    Sumar(fraccion1, fraccion2);
+                    fraccion1.Sumar(fraccion2);
                     break;
                 }
                 case 2: {
