@@ -8,6 +8,7 @@ public class Main {
         int denominador1= Integer.parseInt(buf.readLine());
 
         NumeroRacional fraccion1 = new NumeroRacional (numerador1, denominador1);
+        System.out.println(fraccion1);
 
         System.out.println("Introduce el valor del numerador de la fraccion 2");
         int numerador2 = Integer.parseInt(buf.readLine());

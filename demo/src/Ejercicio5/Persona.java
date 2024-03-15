@@ -105,7 +105,15 @@ public class Persona {
         this.altura = altura;
     }
 
-    public String toString() {
-        return "Persona= "+nombre +" / "+ edad +" / "+ DNI +" / "+ sexo +" / "+ peso +" / "+ altura;
-    }
+@Override
+public String toString(){
+    return "Persona= "+nombre +" / "+ edad +" / "+ DNI +" / "+ sexo +" / "+ peso +" / "+ altura;
+}
+
+public String toStringIMG(){
+    return "Persona= "+nombre +" / "+ edad +" / "+ DNI +" / "+ sexo +" / "+ peso +" / "+ altura;
+}
+
+
+    
 }

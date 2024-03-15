@@ -1,5 +1,5 @@
 public class Output {
-    public void imprimirIMC(){;
+    public void imprimirIMC(Persona p){
         if (this.valorarPesoCorporal(this.calcularIMC(this.getPeso(), this.getAltura())==1)){
             System.out.println("Tiene sobrepeso");  
         }if (this.valorarPesoCorporal(this.calcularIMC(this.getPeso(), this.getAltura())==-1)){

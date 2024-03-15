@@ -41,7 +41,7 @@ public class NumeroRacional {
         int multiplicacion = this.getDenominador()*this.getDenominador();
         int suma= (multiplicacion/this.getDenominador()*this.getNumerador())+(multiplicacion/n2.getDenominador()*n2.getNumerador());
         NumeroRacional resultado = new NumeroRacional(suma, multiplicacion);
-        System.out.println("La suma de "+this+" + "+n2+" es "+resultado);
+        System.out.println("La suma de "+ this.numerador "/" + this.denominador +" + "+ n2.toString +" es "+resultado);
         return resultado;  
     }
 

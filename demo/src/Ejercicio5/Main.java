@@ -23,6 +23,7 @@ public class Main {
 
         
         p1.imprimirIMC();
+        imprimirIMC(p1);
         p2.imprimirIMC();
         p3.imprimirIMC();
 
