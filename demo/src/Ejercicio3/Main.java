@@ -1,25 +1,28 @@
+import java.io.InputStreamReader;
+
+
 public class Main {
     public static void main(String[] args) {
         BufferReader buf = new BufferReader (new InputStreamReader(System.in));
-
+    
         System.out.println("Introduce el valor del numerador de la fraccion 1");
         int numerador1 = Integer.parseInt(buf.readLine());
         System.out.println("Introduzca el valor del denominador de la fraccion 1");
         int denominador1= Integer.parseInt(buf.readLine());
-
+    
         NumeroRacional fraccion1 = new NumeroRacional (numerador1, denominador1);
         System.out.println(fraccion1);
-
+    
         System.out.println("Introduce el valor del numerador de la fraccion 2");
         int numerador2 = Integer.parseInt(buf.readLine());
         System.out.println("Introduzca el valor del denominador de la fraccion 2");
         int denominador2= Integer.parseInt(buf.readLine());
-
+    
         NumeroRacional fraccion2 = new NumeroRacional (numerador2, denominador2);
-
+    
         System.out.println("Introduce: 1 para sumar, 2 para restar, 3 para multiplicar, 4 para dividir, 0 para salir de la consola");
         int opcion = Integer.parseInt(buf.readLine());
-
+    
         do {
             switch (opcion){
                 case 1: {
@@ -48,4 +51,7 @@ public class Main {
     
         }while (opcion != 0);
     }   
-}   
+    
+
+}
+
